@@ -9,21 +9,29 @@ namespace Capa_Logica
 {
     public static class ControladorMarca
     {
-
         public static void ComprobarCiYRedirigir(string ci, string fechaNueva)
         {
             MarcaModelo m = new MarcaModelo(ci);
             string fechaSalida = m.FechaSalida;
             string fechaEntrada = m.FechaEntrada;
+            Console.Write(fechaSalida);
 
-            if (fechaSalida == null)
-            {
-                ControladorMarca.LleanarSalida(fechaNueva, fechaEntrada, ci);
-            }
-            if (fechaSalida != null)
+            if(fechaEntrada == "")
             {
                 ControladorMarca.CreacionYentrada(ci, fechaNueva);
             }
+            else
+            {
+                if (fechaSalida == "")
+                {
+                    ControladorMarca.LleanarSalida(fechaNueva, fechaEntrada, ci);
+                }
+                if (fechaSalida != "")
+                {
+                    ControladorMarca.CreacionYentrada(ci, fechaNueva);
+                }
+            }
+            
         }
 
         public static void CreacionYentrada(string ci, string fechaEntrada)

@@ -23,7 +23,7 @@ namespace Capa_de_datos
         public void Insertar()
         {
             this.Command.CommandText = "INSERT INTO marca (CiPersona, FechaHoraEntrada) " +
-                "VALUES (STR_TO_DATE(@FechaHoraEntrada, '%d-%m-%Y %H:%i:%s'), FechaHoraEntrada);";
+                "VALUES (@CiPersona, STR_TO_DATE(@FechaHoraEntrada, '%d/%m/%Y %H:%i:%s'));";
             this.Command.Parameters.AddWithValue("@CiPersona", this.Ci);
             this.Command.Parameters.AddWithValue("@FechaHoraEntrada", this.FechaEntrada);
             this.Command.Prepare();
@@ -34,8 +34,8 @@ namespace Capa_de_datos
         public void CompletarSalida()
         {
             this.Command.CommandText = "UPDATE marca SET " +
-                "FechaHoraSalida = STR_TO_DATE(@FechaHoraSalida, '%d-%m-%Y %H:%i:%s')" +
-                "WHERE CiPersona = @CiPersona AND FechaHoraEntrada = STR_TO_DATE(@FechaHoraEntrada, '%d-%m-%Y %H:%i:%s');";
+                "FechaHoraSalida = STR_TO_DATE(@FechaHoraSalida, '%d/%m/%Y %H:%i:%s')" +
+                "WHERE CiPersona = @CiPersona AND FechaHoraEntrada = STR_TO_DATE(@FechaHoraEntrada, '%d/%m/%Y %H:%i:%s');";
             this.Command.Parameters.AddWithValue("@CiPersona", this.Ci);
             this.Command.Parameters.AddWithValue("@FechaHoraEntrada", this.FechaEntrada);
             this.Command.Parameters.AddWithValue("@FechaHorasalida", this.FechaSalida);
@@ -49,12 +49,12 @@ namespace Capa_de_datos
             this.Command.CommandText = "SELECT * FROM marca WHERE CiPersona = @Ci " +
                 "ORDER BY FechaHoraEntrada DESC " +
                 "LIMIT 1;";
-            this.Command.Parameters.AddWithValue("@Ci", this.Ci);
+            this.Command.Parameters.AddWithValue("@Ci", Ci);
             this.Command.Prepare();
 
             this.DataReader = this.Command.ExecuteReader();
 
-            if (this.DataReader.Read())
+            while (this.DataReader.Read())
             {
                 this.FechaEntrada = this.DataReader["FechaHoraEntrada"].ToString();
                 this.FechaSalida = this.DataReader["FechaHoraSalida"].ToString();

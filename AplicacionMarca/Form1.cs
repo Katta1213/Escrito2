@@ -21,6 +21,7 @@ namespace AplicacionMarca
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show(dateTimePicker1.Value.ToString());
+            dateTimePicker1.ResetText();
             ControladorMarca.ComprobarCiYRedirigir(txtCedula.Text, dateTimePicker1.Value.ToString());
         }
     }
