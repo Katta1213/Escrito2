@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa Logica", "Capa Logica\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AplicacionMarca", "AplicacionMarca\AplicacionMarca.csproj", "{76C5C860-1FAB-4CD4-B6C1-B6873983DCB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vista", "Vista\Vista.csproj", "{2769CDE4-11CB-40ED-83D6-9F1BA5BD9026}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{76C5C860-1FAB-4CD4-B6C1-B6873983DCB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76C5C860-1FAB-4CD4-B6C1-B6873983DCB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76C5C860-1FAB-4CD4-B6C1-B6873983DCB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2769CDE4-11CB-40ED-83D6-9F1BA5BD9026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2769CDE4-11CB-40ED-83D6-9F1BA5BD9026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2769CDE4-11CB-40ED-83D6-9F1BA5BD9026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2769CDE4-11CB-40ED-83D6-9F1BA5BD9026}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

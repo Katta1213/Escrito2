@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace Capa_de_datos
 {
@@ -59,6 +60,26 @@ namespace Capa_de_datos
                 this.FechaEntrada = this.DataReader["FechaHoraEntrada"].ToString();
                 this.FechaSalida = this.DataReader["FechaHoraSalida"].ToString();
             }
+        }
+
+        public List<MarcaModelo> GetWithCi(string ci)
+        {
+            this.Command.CommandText = "Select FechaHoraEntrada, FechaHoraSalida from marca Where CiPersona = @Ci;";
+            this.Command.Parameters.AddWithValue("@Ci", ci);
+            this.Command.Prepare();
+
+            this.DataReader = this.Command.ExecuteReader();
+
+            List<MarcaModelo> lista = new List<MarcaModelo>();
+            while (this.DataReader.Read())
+            {
+                MarcaModelo m = new MarcaModelo();
+                m.Ci = ci;
+                m.FechaEntrada = DataReader["FechaHoraEntrada"].ToString();
+                m.FechaSalida = DataReader["FechaHoraSalida"].ToString();
+                lista.Add(m);
+            }
+            return lista;
         }
     }
 }

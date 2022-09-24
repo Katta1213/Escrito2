@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Capa_de_datos;
+using System.Data;
 
 namespace Capa_Logica
 {
@@ -42,8 +43,6 @@ namespace Capa_Logica
             m.Insertar();
         }
 
-
-
         public static void LleanarSalida(string fechaSalida, string fechaEntrada, string ci)
         {
             MarcaModelo m = new MarcaModelo();
@@ -51,6 +50,26 @@ namespace Capa_Logica
             m.FechaEntrada = fechaEntrada;
             m.FechaSalida = fechaSalida;
             m.CompletarSalida();
+        }
+
+        public static DataTable ObtenerPorCi(String ci)
+        {
+            MarcaModelo m = new MarcaModelo();
+            List<MarcaModelo> lista = m.GetWithCi(ci);
+
+            DataTable tablaDeMarcas = new DataTable();
+            tablaDeMarcas.Columns.Add("Entrada", typeof(DateTime));
+            tablaDeMarcas.Columns.Add("Salida", typeof(DateTime));
+
+            foreach (MarcaModelo mm in lista)
+            {
+                DataRow fila = tablaDeMarcas.NewRow();
+                fila["Entrada"] = mm.FechaEntrada;
+                fila["Salida"] = mm.FechaSalida;
+                tablaDeMarcas.Rows.Add(fila);
+            }
+
+            return tablaDeMarcas;
         }
     }
 }
