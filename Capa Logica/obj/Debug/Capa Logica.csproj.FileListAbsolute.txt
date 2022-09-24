@@ -1,0 +1,31 @@
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\Capa Logica.dll
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\Capa Logica.pdb
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\Capa de datos.dll
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\MySql.Data.dll
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\Google.Protobuf.dll
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\ZstdNet.dll
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\System.Memory.dll
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\System.Buffers.dll
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\Capa de datos.pdb
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\Capa de datos.dll.config
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\MySql.Data.xml
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\Google.Protobuf.pdb
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\Google.Protobuf.xml
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\System.Memory.xml
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\System.Buffers.xml
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\obj\Debug\Capa Logica.csprojAssemblyReference.cache
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\obj\Debug\Capa Logica.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\obj\Debug\Capa Logica.csproj.CopyComplete
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\obj\Debug\Capa Logica.dll
+C:\Users\Administrador\Desktop\Escrito 2 - Iñaki Catta\Capa Logica\obj\Debug\Capa Logica.pdb
